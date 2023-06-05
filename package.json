@@ -1,0 +1,23 @@
+{
+  "name": "mubyte-apppage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass sass/styles.sass css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheCodeChameleon/MuByte-AppPage.git"
+  },
+  "author": "TheCodeChameleon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheCodeChameleon/MuByte-AppPage/issues"
+  },
+  "homepage": "https://github.com/TheCodeChameleon/MuByte-AppPage#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

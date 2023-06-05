@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #090302;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo {
+  width: 90px;
+}
+.navbar-options {
+  padding: 20px;
+}
+.navbar-options a {
+  text-decoration: none;
+  color: #FDFFF7;
+  position: relative;
+  margin: 0 10px;
+}
+.navbar-options a::after {
+  content: "";
+  width: 0;
+  background: linear-gradient(90deg, #090302 0%, #F7880D);
+  transition: width 0.2s ease;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 10px;
+}
+.navbar-options a:hover::after {
+  width: 100%;
+}
+
+.welcome {
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 200px 100px;
+}
+.welcome-text h1 {
+  font-size: 50px;
+}
+.welcome-text h3 {
+  width: 200px;
+}
+.welcome-image {
+  width: 350px;
+}
+
+.reasons {
+  background: yellow;
+}
+.reasons-text {
+  width: 100%;
+  text-align: center;
+}
+.reasons-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reasons-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  margin: 20px;
+  width: 900px;
+}
+.reasons-grid-container-text {
+  width: 300px;
+}
+.reasons-grid-container-image img {
+  width: 160px;
+}
+
+.opinions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: orange;
+  padding: 110px 0;
+}
+.opinions-mobile img {
+  width: 520px;
+}
+
+.plans {
+  background: gray;
+}
+.plans-title {
+  width: 100%;
+  text-align: center;
+}
+.plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans-container-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hook {
+  background: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px;
+}
+.hook-container {
+  width: 700px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hook-container-image {
+  padding: 20px;
+}
+.hook-container-image img {
+  width: 300px;
+}
+.hook-container-text p {
+  width: 200px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: green;
+}
+
+/*# sourceMappingURL=styles.css.map */
