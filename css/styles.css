@@ -451,8 +451,5 @@ body {
     transform: rotate(360deg);
   }
 }
-.area-1, .area-2, .area-3 {
-  visibility: hidden;
-}
 
 /*# sourceMappingURL=styles.css.map */
