@@ -236,8 +236,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: #F7880D;
   padding: 80px 20px;
+}
+.opinions-text {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.opinions-text h2 {
+  font-size: 30px;
+  padding-bottom: 8px;
+}
+.opinions-text h4 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+}
+.opinions-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .opinions-mobile img {
   width: 280px;
@@ -281,7 +301,7 @@ body {
 }
 .plans-title h2 {
   font-size: 30px;
-  font-size-padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 .plans-title h4 {
   font-size: 20px;
@@ -331,7 +351,7 @@ body {
   color: #2D82B7;
   border: 2px solid #2D82B7;
   padding: 5px;
-  margin-bottom: 17px;
+  margin-top: 17px;
   border-radius: 8px;
 }
 .plans-container-square button {
@@ -375,6 +395,9 @@ body {
 .hook-container-image img {
   width: 300px;
 }
+.hook-container-text {
+  padding: 10px 20px;
+}
 .hook-container-text-btn {
   width: 100%;
   text-align: center;
@@ -386,6 +409,7 @@ body {
 .hook-container-text p {
   padding: 0 0 20px;
   font-size: 16px;
+  text-align: left;
 }
 .hook-container-text button {
   background-color: #F7880D;
