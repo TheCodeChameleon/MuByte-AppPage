@@ -21,39 +21,57 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section class="navbar">
       <div class="navbar-logo">
-        <img src="./images/muhead.svg" alt="robot head" />
+        <a href="#"><img src="./images/muhead.svg" alt="robot head" /></a>
       </div>
       <div class="navbar-options">
-        <a href="#">Log In</a>
-        <a href="#">Sign Up</a>
+        <a href="#" id="login">Log In</a>
+        <a href="#" id="signup">Sign Up</a>
       </div>
     </section>
     <section class="welcome">
       <div class="welcome-text">
-        <h1>Mubyte</h1>
+        <h1>MuByte</h1>
         <h3>Your Ultimate Music App</h3>
         <div class="welcome-text-btn">
-          <button>Get Started</button>
-          <button>View Plans</button>
+          <button id="getstarted">Get Started</button>
+          <a href="#plans"><button id="viewplans">View Plans</button></a>
         </div>
       </div>
       <div class="welcome-image">
+        <img
+          src="./images/icons/music-note.svg"
+          alt="musical note symbol"
+          class="welcome-image-first"
+        />
         <img src="./images/mu.svg" alt="robot" />
+        <img
+          src="./images/icons/music-note-beamed.svg"
+          alt="musical note symbol"
+          class="welcome-image-second"
+        />
       </div>
     </section>
     <section class="reasons">
       <div class="reasons-text">
-        <h2>Why Choose Mubyte?</h2>
+        <h2>Why Choose MuByte?</h2>
         <h4>Discover the Advantages of Using Our Music App</h4>
       </div>
       <div class="reasons-grid">
         <div class="reasons-grid-container">
           <div class="reasons-grid-container-image">
-            <img src="./images/example.svg" alt="" />
+            <img src="./images/pictures/library.jpg" alt="" />
           </div>
           <div class="reasons-grid-container-text">
             <h3>Vast and Diverse Music Library</h3>
@@ -72,12 +90,12 @@
             </h4>
           </div>
           <div class="reasons-grid-container-image">
-            <img src="./images/example.svg" alt="" />
+            <img src="./images/pictures/guitar.jpg" alt="" />
           </div>
         </div>
         <div class="reasons-grid-container">
           <div class="reasons-grid-container-image">
-            <img src="./images/example.svg" alt="" />
+            <img src="./images/pictures/sound.jpg" alt="" />
           </div>
           <div class="reasons-grid-container-text">
             <h3>Enjoy your music anywhere</h3>
@@ -87,45 +105,98 @@
       </div>
     </section>
     <section class="opinions">
-      <div class="opinions-mobile">
-        <img src="./images/mobile.webp" alt="" />
+      <div class="opinions-grid">
+        <div class="opinions-grid-images">
+          <img src="./images/people/1.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> MuByte is amazing! I love the
+            user-friendly interface and the sound quality is impeccable. I'm
+            hooked!</span
+          >
+        </div>
+        <div class="opinions-grid-images">
+          <img src="./images/people/2.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> I've discovered several amazing
+            songs on MuByte! The option to create personalized playlists is
+            excellent. The ultimate music app for me!</span
+          >
+        </div>
+        <div class="opinions-grid-images">
+          <img src="./images/people/3.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> Downloading songs for offline
+            listening on MuByte is a game-changer. I recommend it to all music
+            lovers!</span
+          >
+        </div>
       </div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
-      <div class="opinions-images"></div>
+      <div class="opinions-mobile">
+        <img src="./images/mobile.png" alt="" />
+      </div>
+      <div class="opinions-grid">
+        <div class="opinions-grid-images">
+          <img src="./images/people/4.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> MuByte knows my musical taste
+            better than I do! I'm constantly discovering new artists and
+            genres.</span
+          >
+        </div>
+        <div class="opinions-grid-images">
+          <img src="./images/people/5.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> MuByte has transformed my
+            workouts! The energizing playlists make exercising more fun and
+            motivating.</span
+          >
+        </div>
+        <div class="opinions-grid-images">
+          <img src="./images/people/6.png" alt="people's face" />
+          <span
+            ><i class="fa fa-quote-left"> </i> I can't live without MuByte!
+            Connecting it to my sound system and controlling it with voice
+            commands is phenomenal. Having a personal DJ is incredible</span
+          >
+        </div>
+      </div>
     </section>
-    <section class="plans">
+    <section class="plans" id="plans">
       <div class="plans-title">
-        <h2>Plans Mubyte</h2>
+        <h2>Plans MuByte</h2>
         <h4>Choose the plan that fits you</h4>
       </div>
       <div class="plans-container">
         <div class="plans-container-square">
-          <h3>Basic Plan</h3>
-          <ul>
-            <li>Free access to the music library.</li>
-            <li>Music playback with ads.</li>
-            <li>Limited music recommendations.</li>
-            <li>Basic app features.</li>
-          </ul>
+          <div class="plans-container-square-title">
+            <h3>Basic Plan</h3>
+          </div>
+          <div class="plans-container-square-list">
+            <ul>
+              <li>Free access to the music library.</li>
+              <li>Music playback with ads.</li>
+              <li>Limited music recommendations.</li>
+              <li>Basic app features.</li>
+            </ul>
+          </div>
           <button>START NOW</button>
         </div>
         <div class="plans-container-square">
-          <h3>Premium Plan</h3>
-          <ul>
-            <li>Unlimited access to millions of songs.</li>
-            <li>Ad-free music playback.</li>
-            <li>Personalized music recommendations</li>
-            <li>
-              Advanced features, such as offline downloads and superior audio
-              quality.
-            </li>
-            <li>Competitive pricing and flexible subscription options.</li>
-          </ul>
+          <div class="plans-container-square-title">
+            <h3>Premium Plan</h3>
+          </div>
+          <div class="plans-container-square-list">
+            <ul>
+              <li>Unlimited access to millions of songs.</li>
+              <li>Ad-free music playback.</li>
+              <li>Personalized music recommendations</li>
+              <li>
+                Advanced features, such as offline downloads and superior audio
+                quality.
+              </li>
+              <li>Competitive pricing and flexible subscription options.</li>
+            </ul>
+          </div>
           <button>START NOW</button>
         </div>
       </div>
@@ -133,27 +204,29 @@
     <section class="hook">
       <div class="hook-container">
         <div class="hook-container-image">
-          <img src="./images/hook.jpg" alt="" />
+          <img src="./images/hook.png" alt="" />
         </div>
         <div class="hook-container-text">
           <h3>What are you waiting for to get started?</h3>
           <p>
-            With Mubyte, your music experience reaches new heights. Discover
+            With MuByte, your music experience reaches new heights. Discover
             artists, create playlists, and dive into a world of limitless music.
-            Join us today and let Mubyte be the soundtrack of your life!
+            Join us today and let MuByte be the soundtrack of your life!
           </p>
-          <button></button>
+          <div class="hook-container-text-btn">
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
     </section>
     <section class="footer">
       <div class="footer-copy">
-        &copy; 2023 The Code Chameleon. All rights reserved.
+        Copyright &copy; 2023. Some rights reserved.
       </div>
       <div class="footer-icons">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
       </div>
     </section>
   </body>
