@@ -132,6 +132,9 @@ body {
   border-radius: 50%;
   box-shadow: rgba(9, 3, 2, 0.1294117647) 0px 22px 70px 4px;
 }
+.welcome-image-robot {
+  width: 100%;
+}
 .welcome-image-first, .welcome-image-second {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
