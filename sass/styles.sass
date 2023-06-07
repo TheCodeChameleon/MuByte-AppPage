@@ -484,7 +484,8 @@ body
                     margin: 10px 8px
 
         &-image
-            width: 250px
+            max-width: 250px
+            margin-bottom: 10px
             order: 1
 
     h2
@@ -516,14 +517,25 @@ body
     
     .plans-container
         flex-direction: column
+
+        &-square
+            width: 90%
     
-    .hook-container
-        width: 90vw
-        flex-direction: column
+    .hook
+        padding: 20px 0
+        &-container
+            width: 90vw
+            flex-direction: column
+
+            &-image img
+                width: 90%
 
     .reasons-grid-container-image
         text-align: center
         img
             width: 90% !important
 
-    
+    .welcome
+        width: 100% !important
+        padding: 0
+        justify-content: center
